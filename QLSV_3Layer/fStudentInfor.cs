@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QLSV_3Layer
 {
-    public partial class Form2 : Form
+    public partial class fStudentInfor : Form
     {
-        public Form2()
+        public fStudentInfor()
         {
             InitializeComponent();
         }

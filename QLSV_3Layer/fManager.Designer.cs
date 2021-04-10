@@ -1,7 +1,7 @@
 ﻿
 namespace QLSV_3Layer
 {
-    partial class Form1
+    partial class fManager
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace QLSV_3Layer
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btn_Search = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dtgvListSV = new System.Windows.Forms.DataGridView();
@@ -55,13 +55,14 @@ namespace QLSV_3Layer
             this.label1.TabIndex = 0;
             this.label1.Text = "Class";
             // 
-            // textBox1
+            // txtSearch
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(534, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(165, 27);
-            this.textBox1.TabIndex = 2;
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(534, 13);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(165, 27);
+            this.txtSearch.TabIndex = 2;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // btn_Search
             // 
@@ -174,8 +175,9 @@ namespace QLSV_3Layer
             this.cbClass.Name = "cbClass";
             this.cbClass.Size = new System.Drawing.Size(207, 28);
             this.cbClass.TabIndex = 11;
+            this.cbClass.SelectedIndexChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
-            // Form1
+            // fManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -183,12 +185,13 @@ namespace QLSV_3Layer
             this.Controls.Add(this.cbClass);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_Search);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "fManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Management";
+            this.Load += new System.EventHandler(this.fManager_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvListSV)).EndInit();
             this.ResumeLayout(false);
@@ -199,7 +202,7 @@ namespace QLSV_3Layer
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btn_Search;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dtgvListSV;

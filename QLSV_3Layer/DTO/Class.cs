@@ -17,5 +17,11 @@ namespace QLSV_3Layer
             this.ClassID = Convert.ToInt32(clas["ClassID"]);
             this.ClassName = clas["ClassName"].ToString();
         }
+
+        public Class(int ID, String Name)
+        {
+            this.ClassID = ID;
+            this.ClassName = Name;
+        }
     }
 }

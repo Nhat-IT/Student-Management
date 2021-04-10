@@ -40,44 +40,20 @@ namespace QLSV_3Layer
                 new DataColumn( "ClassID", typeof(int))
             });
             DataRow dr = DTSV.NewRow();
-            dr["StudentID"] = "101";
-            dr["Name"] = "NVA";
-            dr["Gender"] = true;
-            dr["DateOfBirth"] = DateTime.Now;
-            dr["ClassID"] = 1;
+            dr = dataStudent("102190130","VA",true,DateTime.Now,1);
             DTSV.Rows.Add(dr);
 
-            DataRow dr1 = DTSV.NewRow();
-            dr1["StudentID"] = "102";
-            dr1["Name"] = "NVB";
-            dr1["Gender"] = false;
-            dr1["DateOfBirth"] = DateTime.Now;
-            dr1["ClassID"] = 1;
-            DTSV.Rows.Add(dr1);
+            dr = dataStudent("102190128", "VB", false, DateTime.Now, 1);
+            DTSV.Rows.Add(dr);
 
-            DataRow dr2 = DTSV.NewRow();
-            dr2["StudentID"] = "103";
-            dr2["Name"] = "NVC";
-            dr2["Gender"] = true;
-            dr2["DateOfBirth"] = DateTime.Now;
-            dr2["ClassID"] = 2;
-            DTSV.Rows.Add(dr2);
+            dr = dataStudent("103", "VC", true, DateTime.Now, 2);
+            DTSV.Rows.Add(dr);
 
-            DataRow dr6 = DTSV.NewRow();
-            dr6["StudentID"] = "106";
-            dr6["Name"] = "NVC";
-            dr6["Gender"] = true;
-            dr6["DateOfBirth"] = DateTime.Now;
-            dr6["ClassID"] = 1;
-            DTSV.Rows.Add(dr6);
+            dr = dataStudent("106", "VD", true, DateTime.Now, 1);
+            DTSV.Rows.Add(dr);
 
-            DataRow dr7 = DTSV.NewRow();
-            dr7["StudentID"] = "107";
-            dr7["Name"] = "NVD";
-            dr7["Gender"] = false;
-            dr7["DateOfBirth"] = DateTime.Now;
-            dr7["ClassID"] = 1;
-            DTSV.Rows.Add(dr7);
+            dr = dataStudent("107", "VE", false, DateTime.Now, 1);
+            DTSV.Rows.Add(dr);
 
             DTLSH = new DataTable();
             DTLSH.Columns.AddRange(new DataColumn[]
@@ -85,19 +61,34 @@ namespace QLSV_3Layer
                 new DataColumn("ClassID", typeof(int)),
                 new DataColumn("ClassName", typeof(string)),
             });
-            DataRow dr3 = DTLSH.NewRow();
-            dr3["ClassID"] = 1;
-            dr3["ClassName"] = "LSH1";
-            DTLSH.Rows.Add(dr3);
-            DataRow dr4 = DTLSH.NewRow();
-            dr4["ClassID"] = 2;
-            dr4["ClassName"] = "LSH2";
-            DTLSH.Rows.Add(dr4);
-            DataRow dr5 = DTLSH.NewRow();
-            dr5["ClassID"] = 0;
-            dr5["ClassName"] = "ALL";
-            DTLSH.Rows.Add(dr5);
 
+            DataRow dr1 = DTLSH.NewRow();
+            dr1 = dataClass(0, "ALL");
+            DTLSH.Rows.Add(dr1);
+
+            dr1 = dataClass(1, "DT1");
+            DTLSH.Rows.Add(dr1);
+
+            dr1 = dataClass(2, "DT2");
+            DTLSH.Rows.Add(dr1);
+
+        }
+        public DataRow dataClass(int ID, String Name)
+        {
+            DataRow dr = DTLSH.NewRow();
+            dr["ClassID"] = ID;
+            dr["ClassName"] = Name;
+            return dr;
+        }
+        public DataRow dataStudent(String StuID, String Name, bool Gender, DateTime date, int ClassID)
+        {
+            DataRow dr7 = DTSV.NewRow();
+            dr7["StudentID"] = StuID;
+            dr7["Name"] = Name;
+            dr7["Gender"] = Gender;
+            dr7["DateOfBirth"] = date;
+            dr7["ClassID"] = ClassID;
+            return dr7;
         }
     }
 }

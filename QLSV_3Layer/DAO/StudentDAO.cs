@@ -22,20 +22,26 @@ namespace QLSV_3Layer.DAO
 
         private StudentDAO() { }
 
-        public List<Student> loadStudent(int s1)
+        public List<Student> loadStudent(int i1,String s2 = "")
         {
             List<Student> listStu = new List<Student>();
             foreach(DataRow stu in CSDL.Instance.DTSV.Rows)
             {
-                if (s1 == 0)
+                if (i1 == 0)
                 {
-                    Student s = new Student(stu);
-                    listStu.Add(s);
+                    if(stu["ClassID"].ToString() == s2 || stu["Name"].ToString().Contains(s2))
+                    {
+                        Student s = new Student(stu);
+                        listStu.Add(s);
+                    }
                 }
-                else if (Convert.ToInt32(stu["ClassID"]) == s1)
+                else if (Convert.ToInt32(stu["ClassID"]) == i1)
                 {
-                    Student s = new Student(stu);
-                    listStu.Add(s);
+                    if (stu["ClassID"].ToString() == s2 || stu["Name"].ToString().Contains(s2))
+                    {
+                        Student s = new Student(stu);
+                        listStu.Add(s);
+                    }
                 }
             }
             return listStu;

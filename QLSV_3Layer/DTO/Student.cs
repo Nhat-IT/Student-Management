@@ -23,5 +23,14 @@ namespace QLSV_3Layer
             this.Gender = Convert.ToBoolean(student["Gender"]);
             this.ClassID = Convert.ToInt32(student["ClassID"]);
         }
+
+        public Student(String StuID,String Name,bool Gender,DateTime date,int ClassID)
+        {
+            this.StudentID = StuID;
+            this.Name = Name;
+            this.Gender = Gender;
+            this.DateOfBirth = date;
+            this.ClassID = ClassID;
+        }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace QLSV_3Layer
 {
-    partial class Form2
+    partial class fStudentInfor
     {
         /// <summary>
         /// Required designer variable.
@@ -80,7 +80,7 @@ namespace QLSV_3Layer
             // btn_Cancel
             // 
             this.btn_Cancel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Cancel.Location = new System.Drawing.Point(321, 314);
+            this.btn_Cancel.Location = new System.Drawing.Point(240, 314);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(85, 30);
             this.btn_Cancel.TabIndex = 14;
@@ -98,9 +98,9 @@ namespace QLSV_3Layer
             // 
             this.groupBox2.Controls.Add(this.rbtn_Female);
             this.groupBox2.Controls.Add(this.rbtn_Male);
-            this.groupBox2.Location = new System.Drawing.Point(78, 212);
+            this.groupBox2.Location = new System.Drawing.Point(24, 212);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(226, 64);
+            this.groupBox2.Size = new System.Drawing.Size(400, 82);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Gender";
@@ -108,7 +108,7 @@ namespace QLSV_3Layer
             // rbtn_Female
             // 
             this.rbtn_Female.AutoSize = true;
-            this.rbtn_Female.Location = new System.Drawing.Point(122, 26);
+            this.rbtn_Female.Location = new System.Drawing.Point(233, 38);
             this.rbtn_Female.Name = "rbtn_Female";
             this.rbtn_Female.Size = new System.Drawing.Size(78, 24);
             this.rbtn_Female.TabIndex = 1;
@@ -119,7 +119,7 @@ namespace QLSV_3Layer
             // rbtn_Male
             // 
             this.rbtn_Male.AutoSize = true;
-            this.rbtn_Male.Location = new System.Drawing.Point(22, 26);
+            this.rbtn_Male.Location = new System.Drawing.Point(81, 38);
             this.rbtn_Male.Name = "rbtn_Male";
             this.rbtn_Male.Size = new System.Drawing.Size(63, 24);
             this.rbtn_Male.TabIndex = 0;
@@ -139,7 +139,7 @@ namespace QLSV_3Layer
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(74, 121);
+            this.label3.Location = new System.Drawing.Point(20, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 20);
             this.label3.TabIndex = 10;
@@ -156,7 +156,7 @@ namespace QLSV_3Layer
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(67, 75);
+            this.label2.Location = new System.Drawing.Point(20, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 20);
             this.label2.TabIndex = 8;
@@ -173,7 +173,7 @@ namespace QLSV_3Layer
             // btn_Ok
             // 
             this.btn_Ok.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Ok.Location = new System.Drawing.Point(24, 314);
+            this.btn_Ok.Location = new System.Drawing.Point(105, 314);
             this.btn_Ok.Name = "btn_Ok";
             this.btn_Ok.Size = new System.Drawing.Size(85, 30);
             this.btn_Ok.TabIndex = 6;
@@ -184,20 +184,20 @@ namespace QLSV_3Layer
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(41, 34);
+            this.label1.Location = new System.Drawing.Point(20, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "StudentID";
             // 
-            // Form2
+            // fStudentInfor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(461, 392);
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
-            this.Name = "Form2";
+            this.Name = "fStudentInfor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Information";
             this.groupBox1.ResumeLayout(false);

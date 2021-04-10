@@ -31,3 +31,14 @@ C:\Users\taiba\Downloads\Student_Management_Raw-main\Student_Management_Raw-main
 C:\Users\taiba\Downloads\Student_Management_Raw-main\Student_Management_Raw-main\QLSV_3Layer\obj\Debug\QLSV_3Layer.csproj.CoreCompileInputs.cache
 C:\Users\taiba\Downloads\Student_Management_Raw-main\Student_Management_Raw-main\QLSV_3Layer\obj\Debug\QLSV_3Layer.exe
 C:\Users\taiba\Downloads\Student_Management_Raw-main\Student_Management_Raw-main\QLSV_3Layer\obj\Debug\QLSV_3Layer.pdb
+C:\Users\taiba\source\repos\Student_Management\Student_Management\QLSV_3Layer\bin\Debug\QLSV_3Layer.exe.config
+C:\Users\taiba\source\repos\Student_Management\Student_Management\QLSV_3Layer\bin\Debug\QLSV_3Layer.exe
+C:\Users\taiba\source\repos\Student_Management\Student_Management\QLSV_3Layer\bin\Debug\QLSV_3Layer.pdb
+C:\Users\taiba\source\repos\Student_Management\Student_Management\QLSV_3Layer\obj\Debug\QLSV_3Layer.csprojAssemblyReference.cache
+C:\Users\taiba\source\repos\Student_Management\Student_Management\QLSV_3Layer\obj\Debug\QLSV_3Layer.fManager.resources
+C:\Users\taiba\source\repos\Student_Management\Student_Management\QLSV_3Layer\obj\Debug\QLSV_3Layer.Properties.Resources.resources
+C:\Users\taiba\source\repos\Student_Management\Student_Management\QLSV_3Layer\obj\Debug\QLSV_3Layer.csproj.GenerateResource.cache
+C:\Users\taiba\source\repos\Student_Management\Student_Management\QLSV_3Layer\obj\Debug\QLSV_3Layer.csproj.CoreCompileInputs.cache
+C:\Users\taiba\source\repos\Student_Management\Student_Management\QLSV_3Layer\obj\Debug\QLSV_3Layer.exe
+C:\Users\taiba\source\repos\Student_Management\Student_Management\QLSV_3Layer\obj\Debug\QLSV_3Layer.pdb
+C:\Users\taiba\source\repos\Student_Management\Student_Management\QLSV_3Layer\obj\Debug\QLSV_3Layer.fStudentInfor.resources

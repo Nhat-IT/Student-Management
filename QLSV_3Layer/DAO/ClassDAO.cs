@@ -31,6 +31,5 @@ namespace QLSV_3Layer.DAO
             }
             return listClass;
         }
-
     }
 }
